@@ -1,0 +1,18 @@
+
+ 
+ <div *ngIf="store.loading$ | async" class="center">
+      <mat-spinner></mat-spinner>
+    </div>
+
+    <div *ngIf="store.error$ | async as error" class="center error">
+      {{ error }}
+    </div>
+
+  <div *ngIf="store.items$ | async as items">
+  <div *ngIf="items.length > 0">
+      <mat-card *ngFor="let item of store.items$ | async" style="margin: 10px">
+        <mat-card-title>{{ item.name }}</mat-card-title>
+        <mat-card-content>{{ item.description }}</mat-card-content>
+      </mat-card>
+   </div>
+   </div>

@@ -1,3 +1,4 @@
 # care-monitor
 
-Create a simple Angular application with the following features:
+ UserName: careMonitor@example.com
+ password :careMonitor

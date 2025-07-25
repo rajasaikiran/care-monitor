@@ -1,0 +1,10 @@
+<div class="dashboard">
+      <h2>Welcome, {{ userEmail }}</h2>
+ 
+      <a mat-button [routerLink]="['/list']">Go to List Page</a>
+
+
+      <button mat-raised-button color="warn" (click)="logout()">
+        Logout
+      </button>
+    </div>
